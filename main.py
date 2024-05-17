@@ -10,14 +10,14 @@ blocknum=0
 web3 = Web3(Web3.HTTPProvider('http://localhost:7545'))  # Connect to local Ganache instance
 
 # Load smart contract ABI from file
-with open('BDA/CredentialVerifier.abi', 'r') as f:
+with open('BDA/CourseRegistration.abi', 'r') as f:
     contract_abi = json.load(f)
 
 # Address of deployed smart contract
-contract_address = '0x01249AeEc15B9D168db24995e7b186BFD1D66532'  # Replace with your actual contract address
+contract_address = '0x8eE2F36D2EA7e3A946Ca9B40c11c5926DC9C9a2C'  # Replace with your actual contract address
 
 # Account address that will be used to send transactions
-from_address = '0x19e2FB870441Ec08A34Fb822c9B8e53B6Bb5898c'  # Replace with your actual Ethereum address
+from_address = '0xca865Ca50B4841a305914255E830E6A2eB7AF68a'  # Replace with your actual Ethereum address
 
 # Initialize smart contract instance
 contract = web3.eth.contract(address=contract_address, abi=contract_abi)
@@ -58,7 +58,7 @@ def index():
         # Insert vote details into the SQLite database
             record_vote(entered_usn, entered_name,selected_organization)
             # Redirect to the thank you page if credentials are valid
-            return redirect(url_for('thank_you', organization=selected_organization, usn=entered_usn, name=entered_name))
+            return redirect(url_for('thank_you', course=selected_organization, usn=entered_usn, name=entered_name))
         else:
             # Return an error message
             return jsonify({'error': 'Invalid credentials. Please enter a valid USN.'}), 400
