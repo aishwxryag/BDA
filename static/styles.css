@@ -1,0 +1,75 @@
+/* Improved and Fancy CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f5; /* Light blue background for a soothing effect */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Added top margin for better spacing */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Increased border-radius for smoother edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased box shadow for depth */
+}
+
+h1 {
+    color: #007bff; /* Blue heading */
+    text-align: center; /* Centered heading for better visual appeal */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px; /* Increased margin for better separation */
+    color: #555; /* Dark gray color for labels */
+}
+
+select, input[type="text"], button {
+    width: 100%;
+    padding: 14px; /* Increased padding for better touch experience */
+    margin-bottom: 20px; /* Increased margin for better separation */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 8px; /* Slightly reduced border-radius for a modern look */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745; /* Green button color for contrast */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green color on hover */
+}
+
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.block-details {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Increased border-radius for smoother edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased box shadow for depth */
+    padding: 20px;
+}
+
+.detail {
+    margin-bottom: 15px; /* Increased margin for better separation */
+}
+
+.detail strong {
+    margin-right: 15px; /* Increased margin for better alignment */
+}

@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Credential Validation</h1>
+        <form action="/" method="post">
+            <label for="organization">Select an Organization:</label>
+            <select name="organization" id="organization">
+                <option value="NSS">NSS</option>
+                <option value="NCC">NCC</option>
+                <option value="BDC">BDC</option>
+            </select>
+            <br>
+            <label for="voter_id">Enter Your USN:</label>
+            <input type="text" id="voter_id" name="voter_id">
+            <br>
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <button type="submit">Vote</button>
+        </form>
+    </div>
+</body>
+</html> 
